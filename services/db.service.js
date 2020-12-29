@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const config = require('../config/index');
 
-const dbName = 'mynotes_db';
+const dbName = 'notice_db';
 
 let dbConn = null;
 

@@ -3,9 +3,10 @@ console.log('My-Notes Server');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-
+require('dotenv').config();
 const PORT = process.env.PORT || 3030;
 const app = express();
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('public'));
